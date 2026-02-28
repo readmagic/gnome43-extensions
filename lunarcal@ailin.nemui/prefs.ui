@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface domain="lunarcal@ailin.nemui">
+  <requires lib="gtk" version="4.0"/>
+  <object class="GtkGrid" id="content-table">
+    <property name="can-focus">1</property>
+    <property name="row-spacing">4</property>
+    <property name="column-spacing">4</property>
+    <property name="row-homogeneous">1</property>
+    <property name="column-homogeneous">1</property>
+    <child>
+      <object class="GtkLabel" id="show-time-l">
+        <property name="can-focus">0</property>
+        <property name="label" translatable="yes">显示时间</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="row">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="GtkLabel" id="show-date-l">
+        <property name="can-focus">0</property>
+        <property name="label" translatable="yes">显示日期</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="row">1</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="GtkLabel" id="show-calendar-l">
+        <property name="can-focus">0</property>
+        <property name="label" translatable="yes">日历</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="row">2</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="GtkLabel" id="gen-zhi-l">
+        <property name="can-focus">0</property>
+        <property name="label" translatable="yes">干支</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="row">3</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="GtkSwitch" id="show-time">
+        <property name="halign">center</property>
+        <property name="valign">center</property>
+        <layout>
+          <property name="column">1</property>
+          <property name="row">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="GtkSwitch" id="show-date">
+        <property name="halign">center</property>
+        <property name="valign">center</property>
+        <layout>
+          <property name="column">1</property>
+          <property name="row">1</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="GtkSwitch" id="show-calendar">
+        <property name="halign">center</property>
+        <property name="valign">center</property>
+        <layout>
+          <property name="column">1</property>
+          <property name="row">2</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="GtkLabel" id="ba-zi-l">
+        <property name="can-focus">0</property>
+        <property name="label" translatable="yes">八字</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="row">4</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="GtkLabel" id="jieri-l">
+        <property name="can-focus">0</property>
+        <property name="label" translatable="yes">节日</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="row">5</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="GtkSwitch" id="gen-zhi">
+        <property name="halign">center</property>
+        <property name="valign">center</property>
+        <layout>
+          <property name="column">1</property>
+          <property name="row">3</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="GtkSwitch" id="ba-zi">
+        <property name="halign">center</property>
+        <property name="valign">center</property>
+        <layout>
+          <property name="column">1</property>
+          <property name="row">4</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="GtkSwitch" id="jieri">
+        <property name="halign">center</property>
+        <property name="valign">center</property>
+        <layout>
+          <property name="column">1</property>
+          <property name="row">5</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="GtkLabel" id="ziti-dx-l">
+        <property name="can-focus">0</property>
+        <property name="label" translatable="yes">字体大小修改</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="row">7</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="GtkGrid">
+        <property name="can-focus">1</property>
+        <property name="halign">center</property>
+        <property name="valign">center</property>
+        <property name="row-homogeneous">1</property>
+        <property name="column-homogeneous">1</property>
+        <property name="css-classes">linked</property>
+        <child>
+          <object class="GtkToggleButton" id="zti-2">
+            <property name="label" translatable="yes">小</property>
+            <property name="receives-default">1</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="GtkToggleButton" id="zti-3">
+            <property name="label" translatable="yes"> </property>
+            <property name="receives-default">1</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="GtkToggleButton" id="zti-4">
+            <property name="label" translatable="yes">正</property>
+            <property name="receives-default">1</property>
+            <layout>
+              <property name="column">2</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="GtkToggleButton" id="zti-5">
+            <property name="label" translatable="yes"> </property>
+            <property name="receives-default">1</property>
+            <layout>
+              <property name="column">3</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="GtkToggleButton" id="zti-6">
+            <property name="label" translatable="yes">大</property>
+            <property name="receives-default">1</property>
+            <layout>
+              <property name="column">4</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <layout>
+          <property name="column">1</property>
+          <property name="row">7</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="GtkLabel" id="yuyan-l">
+        <property name="can-focus">0</property>
+        <property name="label" translatable="yes">语言</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="row">8</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="GtkDropDown" id="yuyan">
+        <property name="model">
+          <object class="GtkStringList">
+            <items>
+              <item translatable="yes">大陆</item>
+              <item translatable="yes">香港</item>
+              <item translatable="yes">台灣</item>
+              <item translatable="yes">(自动)</item>
+              <item translatable="yes">Pīnyīn</item>
+              <item translatable="yes">Elements</item>
+            </items>
+          </object>
+        </property>
+        <property name="halign">center</property>
+        <property name="valign">center</property>
+        <layout>
+          <property name="column">1</property>
+          <property name="row">8</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="GtkLabel" id="cxk-l">
+        <property name="can-focus">0</property>
+        <property name="sensitive">0</property>
+        <property name="label" translatable="yes">程序库</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="row">9</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="GtkLabel" id="cxk">
+        <property name="selectable">1</property>
+        <property name="label" translatable="yes"></property>
+        <property name="opacity">0.6</property>
+        <layout>
+          <property name="column">1</property>
+          <property name="row">9</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <placeholder/>
+    </child>
+    <child>
+      <placeholder/>
+    </child>
+  </object>
+</interface>

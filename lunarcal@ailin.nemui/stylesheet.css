@@ -1,0 +1,21 @@
+.lunar-calendar .calendar-day-with-events {
+    background-size: cover;
+}
+
+.lunar-calendar-none .calendar-work-day, .lunar-calendar-none .calendar-nonwork-day {
+    height: 3.8em !important;
+    width: 3.8em !important;
+    border-radius: 99px;
+}
+
+.lunar-calendar-large .calendar-work-day, .lunar-calendar-large .calendar-nonwork-day {
+    height: 4.5em !important;
+    width: 4.5em !important;
+    border-radius: 99px;
+}
+
+.lunar-calendar-x-large .calendar-work-day, .lunar-calendar-x-large .calendar-nonwork-day {
+    height: 5.1em !important;
+    width: 5.1em !important;
+    border-radius: 99px;
+}
