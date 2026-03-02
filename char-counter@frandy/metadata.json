@@ -1,0 +1,7 @@
+{
+    "name": "Char Counter",
+    "description": "统计当天输入字符数量",
+    "uuid": "char-counter@frandy",
+    "shell-version": ["43"],
+    "version": 1
+}
