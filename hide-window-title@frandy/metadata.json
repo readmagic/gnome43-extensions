@@ -1,0 +1,10 @@
+{
+  "name": "Hide Window Title",
+  "description": "隐藏 GNOME 顶部栏的窗口标题",
+  "uuid": "hide-window-title@frandy",
+  "shell-version": [
+    "43"
+  ],
+  "version": 1,
+  "url": "https://github.com/frandy/hide-window-title"
+}
