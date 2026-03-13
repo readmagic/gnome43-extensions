@@ -818,6 +818,8 @@ const DockedDash = GObject.registerClass({
         this._dockState = State.SHOWING;
         this.dash.iconAnimator.start();
         this._delayedHide = false;
+        // 启用鼠标事件响应，因为 dock 即将显示
+        this._box.reactive = true;
 
         this._slider.ease_property('slide-x', 1, {
             duration: time * 1000,
@@ -856,6 +858,8 @@ const DockedDash = GObject.registerClass({
                 if (this._removeBarrierTimeoutId > 0)
                     GLib.source_remove(this._removeBarrierTimeoutId);
                 this._updateBarrier();
+                // 禁用鼠标事件响应，防止隐藏的 dock 拦截点击
+                this._box.reactive = false;
                 this.dash.iconAnimator.pause();
             },
         });
